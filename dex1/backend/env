@@ -1,4 +1,4 @@
-INCH_KEY =Dc6PMiiozmna9v3hMqK2s1zFg9wB0CJs
+INCH_KEY =""
 
 
   "server": "node backend/index.js"
