@@ -36,7 +36,7 @@ const fetchTokensForChain = async (chain, retries = 0) => {
   const url = `https://api.1inch.dev/swap/v6.0/${chain}/tokens`;
   const config = {
     headers: {
-      "Authorization": `Bearer Dc6PMiiozmna9v3hMqK2s1zFg9wB0CJs`, // Use environment variable for authorization key
+      "Authorization": `Bearer ""`, // Use environment variable for authorization key
     }
   };
 
@@ -83,7 +83,7 @@ const fetchTokenPrice = async (chainId, tokenOneAddress, tokenTwoAddress) => {
   const addresses = `${tokenOneAddress},${tokenTwoAddress}`;
   const config = {
     headers: {
-      "Authorization": "Bearer Dc6PMiiozmna9v3hMqK2s1zFg9wB0CJs",
+      "Authorization": "Bearer """,
       "X-Requested-With": "XMLHttpRequest",
     },
     params: {
@@ -129,7 +129,7 @@ app.get('/tokenlist', async (req, res, next) => {
   const config = {
     headers: {
 
-      "Authorization": `Bearer Dc6PMiiozmna9v3hMqK2s1zFg9wB0CJs`, // Use environment variable for authorization key
+      "Authorization": `Bearer ""`, // Use environment variable for authorization key
       "X-Requested-With": "XMLHttpRequest"
     }
   };
@@ -169,7 +169,7 @@ const {chainId} = req.query;
  
  const config = {
   headers: {
-    "Authorization": "Bearer Dc6PMiiozmna9v3hMqK2s1zFg9wB0CJs",  //process.env.1INCH_KEY
+    "Authorization": "Bearer """,  //process.env.1INCH_KEY
    //"X-Requested-With": "XMLHttpRequest",
 //Enable credentials (cookies, authorization headers, etc.)
   },
@@ -213,7 +213,7 @@ app.get('/tokenPrice', async (req, res) => {
     const addresses = `${tokenOneAddress},${tokenTwoAddress}`;
     const config = {
       headers: {
-        "Authorization": "Bearer Dc6PMiiozmna9v3hMqK2s1zFg9wB0CJs",
+        "Authorization": "Bearer """,
         "X-Requested-With": "XMLHttpRequest",
    // Enable credentials (cookies, authorization headers, etc.)
       },
