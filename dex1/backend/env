@@ -1,0 +1,7 @@
+INCH_KEY =Dc6PMiiozmna9v3hMqK2s1zFg9wB0CJs
+
+
+  "server": "node backend/index.js"
+
+      "start": "concurrently \"npm run server\" \"npm run client\"",
+  "client": "react-scripts start",
