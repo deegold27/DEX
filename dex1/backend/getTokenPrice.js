@@ -1,7 +1,7 @@
 import axios from "axios";
   const config = {
     headers: {
-"Authorization": "Bearer Dc6PMiiozmna9v3hMqK2s1zFg9wB0CJs",
+"Authorization": "Bearer "" ",
 "X-Requested-With": "XMLHttpRequest",
 
 },
