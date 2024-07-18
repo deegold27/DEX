@@ -83,7 +83,7 @@ const url =`https://api.1inch.dev/swap/v6.0/${chainId}/tokens`
 
 const config = {
   headers: {
-"Authorization": "Bearer Dc6PMiiozmna9v3hMqK2s1zFg9wB0CJs"
+"Authorization": "Bearer """
 },
   params: {}
 };
@@ -205,7 +205,7 @@ const fetchTokenPrice = async (tokenOneAddress, tokenTwoAddress) => {
   const addresses = `${tokenOneAddress},${tokenTwoAddress}`;
   const config = {
     headers: {
-      "Authorization": "Bearer Dc6PMiiozmna9v3hMqK2s1zFg9wB0CJs",
+      "Authorization": "Bearer """,
       "X-Requested-With": "XMLHttpRequest",
     },
     params: {
